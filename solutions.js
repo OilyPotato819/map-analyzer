@@ -106,28 +106,39 @@ function level11Solution() {
 	if (column <= 5 && row <= 3) {
 		document.getElementById("currentTile").innerHTML = "Water";
 	} else if (column >= 6 && row <=3) {
-		document.getElementById("currentTile").innerHTML = "Tree";
-	} else if () {
-		document.getElementById("currentTile").innerHTML = "----";
+		document.getElementById("currentTile").innerHTML = "Hills";
+	} else if (column <= 5 && row >=4) {
+		document.getElementById("currentTile").innerHTML = "Sand";
 	} else {
-		document.getElementById("currentTile").innerHTML = "----";
+		document.getElementById("currentTile").innerHTML = "Tree";
 	}
 }
 
 function level12Solution() {
 	// USE BINARY IF STATEMENT
-
-	document.getElementById("currentTile").innerHTML = "----"; // Set output text
+	if ((column <= 5 && row <= 4) || (column >= 6 && row >= 5)) {
+		document.getElementById("currentTile").innerHTML = "Water";
+	} else {
+		document.getElementById("currentTile").innerHTML = "Sand";
+	}
 }
 
 function level13Solution() {
 	// USE BINARY IF STATEMENT
-
-	document.getElementById("currentTile").innerHTML = "----"; // Set output text
+	if (column >= 4 && column <= 9 && row >= 2 && row <= 5) {
+		document.getElementById("currentTile").innerHTML = "Sand";
+	} else {
+		document.getElementById("currentTile").innerHTML = "Tree";
+	}
 }
 
 function level14Solution() {
 	// USE CHAINED IF STATEMENT
-
-	document.getElementById("currentTile").innerHTML = "----"; // Set output text
+	if (column >= 2 && column <= 4 && row >= 1 && row <= 5) {
+		document.getElementById("currentTile").innerHTML = "Tree";
+	} else if (column >= 7 && column <= 10 && row >= 3 && row <= 5) {
+		document.getElementById("currentTile").innerHTML = "Water";
+	} else {
+		document.getElementById("currentTile").innerHTML = "Sand";
+	}
 }
